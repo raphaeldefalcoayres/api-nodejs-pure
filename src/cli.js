@@ -78,7 +78,7 @@ const routesTemplate = (moduleName, operations) => {
   let content = `
 import {
   ${operations.map((op) => `${op.toLowerCase()}${moduleName}`).join(",\n  ")}
-} from "../controllers/${moduleName.toLowerCase()}.js";
+} from "../controllers/${moduleName.toLowerCase()}s.js";
 
 const routes = {\n`;
   operations.forEach((op) => {

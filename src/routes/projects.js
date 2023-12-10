@@ -1,15 +1,15 @@
 import {
   createProject,
-  deleteProject,
-  listProject,
   readProject,
+  showProject,
   updateProject,
-} from "../controllers/project.js";
+  deleteProject
+} from "../controllers/projects.js";
 
 const routes = {
-  "GET:/projects": listProject,
-  "GET:/projects/:id": readProject,
   "POST:/projects": createProject,
+  "GET:/projects": readProject,
+  "GET:/projects/:id": showProject,
   "PUT:/projects/:id": updateProject,
   "DELETE:/projects/:id": deleteProject,
 };
